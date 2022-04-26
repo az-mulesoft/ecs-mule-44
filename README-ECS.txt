@@ -1,14 +1,3 @@
-
-
-   docker build -t ecs-mule-44-v2 .
-    docker tag ecr-mule-44-v2:latest public.ecr.aws/u0z0x0b6/ecr-mule-44:latest
-    docker tag ecr-mule-44:latest public.ecr.aws/u0z0x0b6/ecr-mule-44:latest
-   docker tag ecs-mule-44-v2:latest public.ecr.aws/u0z0x0b6/ecs-mule-44-v2:latest
-   docker push public.ecr.aws/u0z0x0b6/ecs-mule-44-v2:latest
-   aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/u0z0x0b6
-   docker push public.ecr.aws/u0z0x0b6/ecs-mule-44-v2:latest
-
-
 Step 1: Build, Tag and Push Docker Container to AWS ECR
 
 - docker build -t ecs-mule-44-v2 .
